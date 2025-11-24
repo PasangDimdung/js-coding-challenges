@@ -2,6 +2,6 @@ function delayedHello(){
     console.log("Hello");
 }
 
-setInterval(()=>{
+setTimeout(()=>{
     delayedHello();
 }, 2000)
