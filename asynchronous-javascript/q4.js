@@ -9,7 +9,7 @@ function getUsersAndPosts(){
     Promise
     .all([userPromise, postPromise])
     .then(([userResult, postResult]) => {
-        console.log({...userResult, ...postResult});
+        console.log([...userResult, ...postResult]);
     });
 }
 
