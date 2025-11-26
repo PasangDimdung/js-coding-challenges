@@ -1,7 +1,8 @@
 function arrayDestructure(arr){
 
-    const [a = 0, b = 0, c = 0] = arr;
-    console.log(a, b, c)
+    const [a = 0, _, c = 0] = arr;
+    return console.log(a,c)
 }
 
-arrayDestructure([1,,2]);
+arrayDestructure([1,5,2]);
+arrayDestructure([1,5,]);
